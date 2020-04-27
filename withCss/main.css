@@ -1,0 +1,45 @@
+/**Comments in css look a bit different**/
+
+/** we can change the background so it isn't just white**/
+body {
+  background-color: lemonchiffon; /** Yes you have to spell color the american way! **/
+  padding: 10px; /** try adjusting this an see the difference **/
+}
+
+/**So we can change the style of the html tags**/
+h1 {
+  text-align: center;
+  color: pink;
+  font-size: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px purple; /** this is quite a cool effect**/
+}
+
+p {
+  color: blueviolet;
+}
+
+/** You could try adding some styles to h2 and h3 here **/
+
+/** the . on the line below means it a class selector so it adds the style to a class with that name
+have a look in index.html to see if you can find where this style is applied**/
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px; /** try changing this and the padding to see the difference between them **/
+  padding: 10px;
+  border: 3px solid palevioletred;
+  border-radius: 10px; /** makes curved corners - you can also do % - if you do 50% its a circle**/
+  height: 40px;
+  width: 50%;
+}
+
+/**You can also do animations with CSS - this is just a very simple one 
+by the way :hover means it only works when you put your mouse over the thing with this class
+but you can write animations that work in other ways (and that are more complicated than this)**/
+.animated:hover {
+  transform: translateX(400px);
+  /** what does translateY() do? what does rotate(20deg) do?**/
+  transition: all 2s linear; /** you can change timing and the timing style**/
+}
